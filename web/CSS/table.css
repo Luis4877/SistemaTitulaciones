@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4/12/2020, 03:45:34 PM
+    Author     : Valdez
+*/
+
+.contenido-tabla{
+
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  
+}
+
+.contenido-tabla thead tr{
+    background-color: #F21114;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+        
+}
+
+.contenido-tabla th,
+.contenido-tabla td{
+    padding: 12px 15px;
+    
+}
+
+.contenido-tabla tbody tr{
+    border-bottom: 1px solid #dddddd;
+    
+}
+
+.contenido-tabla tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.contenido-tabla tbody tr:last-of-type{
+    border-bottom: 2px solid #F21114;
+    
+    
+}

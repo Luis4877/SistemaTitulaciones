@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PEDRO" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ec52e56e-a350-4f06-b785-29332c6d1f2d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Proyecto"/>
+	<parameter name="MATRICULA" class="java.lang.Integer">
+		<parameterDescription><![CDATA[AQUI SE RECIBE LA MATRICULA]]></parameterDescription>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM pre_registro
+WHERE 
+	 pre_registro.matricula = $P{MATRICULA}]]>
+	</queryString>
+	<field name="nivel_academico" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nivel_academico"/>
+		<property name="com.jaspersoft.studio.field.label" value="nivel_academico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="carrera" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="carrera"/>
+		<property name="com.jaspersoft.studio.field.label" value="carrera"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="matricula" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="matricula"/>
+		<property name="com.jaspersoft.studio.field.label" value="matricula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nacimiento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nacimiento"/>
+		<property name="com.jaspersoft.studio.field.label" value="nacimiento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="paterno" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="paterno"/>
+		<property name="com.jaspersoft.studio.field.label" value="paterno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="materno" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="materno"/>
+		<property name="com.jaspersoft.studio.field.label" value="materno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="80" height="80" uuid="eb4402a4-02ab-40cc-9c72-b9845587a98d"/>
+				<imageExpression><![CDATA["C:/Users/Valdez/Desktop/LOGOS/fcaei.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="444" y="0" width="116" height="80" uuid="d2040e23-f5aa-456c-b374-5f2140a2a4c8"/>
+				<imageExpression><![CDATA["C:/Users/Valdez/Desktop/LOGOS/UAEM.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="80" y="0" width="400" height="80" uuid="9cbb77dd-a6d8-40b6-b70a-124a2f4026c2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FACULTAD DE CONTADURÍA, ADMINISTRACIÓN E INFORMÁTICA
+Dirección: Av. Universidad No. 1001, Col Chamilpa, Cuernavaca, C.P. 62209.
+Edificio principal,segundo piso  Tel.3297041 fcaei@uaem.mx
+]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="444" y="24" width="116" height="20" uuid="95a237f4-1c34-4960-b2b6-cd3831933eea"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Matricula:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="500" y="24" width="72" height="19" uuid="188c99b7-b11e-43df-b334-e61c0fc6e0b7">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{matricula}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="550" height="60" uuid="6ec18908-8ed9-4dd9-adea-0888bfc2d5f0"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[
+
+CONSTANCIA DE PRE-REGISTRO PARA EL TITULO UNIVERSITARIO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="210" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="480" height="59" uuid="39c19f04-9af1-47a2-a6d1-89a81f33b307"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[LA SUSCRITA DIRECTORA DE LA FACULTAD DE CONTADURÍA,ADMINISTRACIÓN E INFORMATICA DE LA UNIVERSIDAD AUTONOMA DEL ESTADO DE MORELOS , CON CLAVE DE INSTITUCIÓN 170001,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="64" width="560" height="44" uuid="bcc329ad-7300-492e-81af-bbf5793c944d"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[H A C E  C O N S T A R : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="110" width="543" height="93" uuid="f147eb42-242e-4b91-b2b3-ff5dd861ffa0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Que según los documentos existentes en el Archivo escolar de esta dirección, y los requisitos previos   para la SOLICITUD DE TITULO ELECTRONICO el (la) C.					                    hizo la entrega de los papeles requeridos para   la obtención del titulo electronico universitario de la carrera de:			                     en esta Facultad.
+A petición del (a) interesado (a) y para los usos legales a que haya lugar, se expide en la ciudad de Cuernavaca Morelos con fecha de ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="310" y="126" width="133" height="20" uuid="95de7bb7-ea7d-4a73-8934-1016dc0cb80e">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="125" width="40" height="20" uuid="2471bc66-a629-4070-86b9-474a8126c68f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fef15bc8-0bef-4ca0-82c7-4cc4bc5428d0"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="484" y="126" width="40" height="20" uuid="df9ad04e-594d-4d37-a509-a339830caaf9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="abdc0e2b-2770-45a4-9439-c03d51929f1d"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{materno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="158" width="188" height="20" uuid="746ca2b1-99b0-42ec-a1bf-1386c95c44a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8c13125e-6bbc-4b3e-aefb-97fcac87221d"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{carrera}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMM d, yyyy">
+				<reportElement x="190" y="186" width="110" height="20" uuid="677d1fb2-2cef-40ec-873b-03b2c14557ad">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="83" y="5" width="397" height="75" uuid="911311e8-1ca8-4659-a8a2-08cdb6464128"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[A T E N T A M E N T E  
+
+P O R  U N A  H U M A N I D A D  C U L T A  ]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="10" width="400" height="60" uuid="76ab3831-8f12-4637-b8f3-8d4950ebec0e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[	
+M. en E. Felipe de Jesús Bonilla Sánchez
+
+DIRECTOR DE LA F.C.A.e.I
+
+]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

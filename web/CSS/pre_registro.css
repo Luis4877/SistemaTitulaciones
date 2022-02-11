@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #666;
+    background: #f2f2f2;
+    font-size: 1em;
+
+    line-height: 1.5em;
+    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+    color: #002B54;
+}
+
+#main-content {
+    background: white;
+    width: 92.5%;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 20px;
+}
+
+
+table{
+  background: #ffffff;
+  text-align: left;
+  border-collapse: collapse;
+  max-width: 100%;
+  height: auto;
+}
+
+th, td{
+  padding: 10px;
+}
+
+thead{
+  background-color: #002B54;
+  color: #ffffff;
+  border-bottom: solid 3px #000000;
+
+}
+
+tr:nth-child(even){
+  background-color: #ddd;
+}
+
+.botonSubmit {
+    font-weight: 400;
+    font-size: 15px;
+    color: #F9F9F9;
+    background-color: #107b0a;
+    border-radius: 6px;
+    border: 2px solid #107b0a;
+    width: 120px;
+    margin: 20px auto 10px auto;
+}
+.botonSubmit:hover{
+
+    background-color: #095a04;
+}
+
+
+#main-footer {
+    background: #002B54;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin: 130px auto 0 auto;
+    align-self: flex-end;
+
+}
+#main-footer p {
+    margin: 0;
+}

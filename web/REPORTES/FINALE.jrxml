@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FINALE" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="23e5ddb1-57ea-4a6d-b27d-a60aaf6825bc">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Proyecto"/>
+	<parameter name="MATRICULA1" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM PRE_REGISTRO WHERE MATRICULA=$P{MATRICULA1}]]>
+	</queryString>
+	<field name="nivel_academico" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nivel_academico"/>
+		<property name="com.jaspersoft.studio.field.label" value="nivel_academico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="carrera" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="carrera"/>
+		<property name="com.jaspersoft.studio.field.label" value="carrera"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="matricula" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="matricula"/>
+		<property name="com.jaspersoft.studio.field.label" value="matricula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nacimiento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nacimiento"/>
+		<property name="com.jaspersoft.studio.field.label" value="nacimiento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="paterno" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="paterno"/>
+		<property name="com.jaspersoft.studio.field.label" value="paterno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="materno" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="materno"/>
+		<property name="com.jaspersoft.studio.field.label" value="materno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pre_registro"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="209" splitType="Stretch">
+			<image>
+				<reportElement x="660" y="0" width="139" height="209" uuid="86cd6d5a-3a3f-4987-bac7-662b71c29cfb"/>
+				<imageExpression><![CDATA["C:/Users/Valdez/Desktop/IMAGES/descargar.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="220" y="-20" width="200" height="120" uuid="5bf2428f-2242-4d13-b7ad-95c4a579b45e"/>
+				<imageExpression><![CDATA["C:/Users/Valdez/Desktop/IMAGES/LOGO1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="100" width="660" height="80" uuid="c94bb5f1-5b14-47ab-9b83-3ce442ac1dcb"/>
+				<textElement textAlignment="Center">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EN NOMBRE DE LA NACION
+EL REACTOR DE  LA UNIVERSIDAD AUTÓNOMA DEL  ESTADO DE MORELOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="230" splitType="Stretch">
+			<staticText>
+				<reportElement x="-11" y="0" width="91" height="39" uuid="74b9da45-ff52-4ccd-acb1-ea84aea8fc5d"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="14" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[POR CUANTO:
+En la facultad de :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="15" width="699" height="24" uuid="e836eaac-f651-4eb3-a57c-16f8c33d7bcf">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Old English Text MT" size="16"/>
+				</textElement>
+				<text><![CDATA[  Facultad de Contaduría, Administración e Informática]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="30" width="50" height="20" uuid="8374257c-991d-4d93-9a59-aa4675427fc2"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DON:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="30" width="300" height="20" uuid="7ed5b354-89f1-49f4-bdb9-99723df482b8"/>
+				<textElement>
+					<font fontName="Old English Text MT" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="30" width="110" height="20" uuid="ff946ac0-b657-4924-b1be-5b0662f5632d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Old English Text MT" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="30" width="120" height="20" uuid="f7f2be34-5033-4565-87d0-45bef6b65ac7">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Old English Text MT" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{materno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-5" y="53" width="650" height="90" uuid="fc43ee18-3f91-40e5-bc1b-601842559244"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="10"/>
+				</textElement>
+				<text><![CDATA[ha aprobado los previos requisitos de los estudios universitarios de la carrera de licenciatura en informatica ,conforme con
+la ley Universitaria vigente,el Estatuto Universitario y el Reglamento de Grados y Titulos de la Universidad  Autónoma del Estado de Morelos.
+Entando a lo acordado por el Consejo Universitario en sesión del                                                                                                                                le otorga el Certificado Profesional de :]]></text>
+			</staticText>
+			<textField pattern="MMMM d, yyyy">
+				<reportElement x="290" y="80" width="215" height="19" uuid="e234371a-6c0d-44ac-8789-091ae8be11e7">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Old English Text MT" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="91" width="510" height="20" uuid="379b5708-37a4-4e1f-ab46-d33808900057">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Old English Text MT" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{carrera}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="111" width="670" height="62" uuid="0ff2c3d4-58cb-492d-b8c2-62b46a0cbd1c"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[POR TANTO:
+Le expide el presente TITULO para que se reconozca como tal y goce de los derechos y prerrogativas que las Leyes le conceden.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="33" y="153" width="765" height="77" uuid="3abcbc5f-2221-40e7-9dc4-d904f4ac7e7a"/>
+				<imageExpression><![CDATA["C:/Users/Valdez/Desktop/IMAGES/firmas.PNG"]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+</jasperReport>
